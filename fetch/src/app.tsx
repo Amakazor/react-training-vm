@@ -7,7 +7,6 @@ import { WithFetch } from "./routes/1-fetch-data-with-fetch/with-fetch";
 import { WithAxios } from "./routes/2-fetch-data-with-axios/with-axios";
 import { WithTanStackQuery } from "./routes/3-tan-stack-query/with-tan-stack-query";
 import { WithSwr } from "./routes/4-fetch-with-swr/with-swr";
-import { ErrorsWithTryCatch } from "./routes/5-error-handling-with-try-catch/errors-with-try-catch";
 import { ErrorWithBoundaries } from "./routes/6-error-handling-with-boundaries/error-with-boundaries";
 import { FallbackWithSuspense } from "./routes/7-fallback-rendering-with-suspense/fallback-with-suspense";
 import { SimpleStateMachine } from "./routes/8-simple-state-machine/simple-state-machine";
@@ -26,9 +25,6 @@ const routes: RouteConfig[] = [
     }, {
         path: "/4",
         component: () => <WithSwr/>,
-    }, {
-        path: "/5",
-        component: () => <ErrorsWithTryCatch/>,
     }, {
         path: "/6",
         component: () => <ErrorWithBoundaries/>,
