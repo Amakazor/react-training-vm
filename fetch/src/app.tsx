@@ -2,6 +2,7 @@ import "./app.pcss";
 
 import { RouteConfig, Router } from "common/src/components/router/router";
 import React from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 import { WithFetch } from "./routes/1-fetch-data-with-fetch/with-fetch";
 import { WithAxios } from "./routes/2-fetch-data-with-axios/with-axios";
@@ -41,8 +42,12 @@ const routes: RouteConfig[] = [
 ];
 
 function App() {
+    const queryClient = new QueryClient();
+
     return (
-        <Router routes={routes}/>
+        <QueryClientProvider client={queryClient}>
+            <Router routes={routes}/>
+        </QueryClientProvider>
     );
 }
 
