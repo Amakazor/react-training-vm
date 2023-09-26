@@ -4,13 +4,9 @@
   "private": true,
   "workspaces": [
     "state",
-    "state-homework",
     "props",
-    "props-homework",
     "hooks",
-    "hooks-homework",
     "fetching",
-    "fetching-homework",
     "common"
   ],
   "devDependencies": {
